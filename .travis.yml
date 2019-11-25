@@ -9,3 +9,9 @@ addons:
 script:
   # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=julg_apitheses
+
+notifications:
+  slack:
+    rooms:
+      - secure: "FNNBqRvl4BGxgcEWETD/gYCUzqVSVaPEUUdzfV4bC/Id7WXLrcgn/BW+NBt63ndAftwrjGIgQCbLXSIrlUqxV1cje9yAaBjOzW+ceoesEIzY4iFMQv7WQu2UqRUUai/5/QNvowJ8mO188wzXmlmAi01ZyS5+/oHOM+XoA0uEEz1TLVCVTj3hie4Cg+QNj5DOl3rLnDZ9ThP1iCDMOoOuSemG4bMG748QkqWNAvFJcAKLYgQBAN3Uf+ejZQxVWPm1CzJJ2dmHcZIM/K7SzBIuEU8Yb69MW/o/dSxg15AdOSyWHD/AobqIQWEWsFahFOHDEG+GTH5oiiOuzoUo7c1a6c8rKzESZTLG6LfuVuyvMtK07DzPqkSfIkHJvP/E1Hv6WDrDZ8iyqfxcsUn1lqRMHCNrPT3C85gf04ZIX3LwdZx7oCPZzdFPdwQJEyw9LaDI5IuhLHXckg3nB0qodgIH3+YxiXe6q9xoEf5/RlwbPHq93a6jkYJq5BtnYAw+gDzqPB1S3x5Krh46dDirLHqvIZUuu/tJ7zlOwR2uND/3zo5otQ9C6f5F6BJ0tCqB5+jau78oFAFX9GfjTBjXY1WG6D9pKibkGh7e+Enh77Dxr454eKcBV0UtUnI+q5xjy8U8/GSLj1Teu6VJKQcjiEt0SzEzrQk879cpA6bM0pHMYJs="
+
